@@ -24,7 +24,7 @@ const TotalCustomers = (props) => (
             gutterBottom
             variant="h6"
           >
-            TOTAL DE NOTA FISCAL
+            TOTAL 00000 FISCAL
           </Typography>
           <Typography
             color="textPrimary"

@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import App from './App';
+import Wiki from './App';
 
 ReactDOM.render((
   <BrowserRouter>
-    <App />
+    <Wiki />
   </BrowserRouter>
 ), document.getElementById('root'));
 

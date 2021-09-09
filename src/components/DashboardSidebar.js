@@ -153,7 +153,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
             width: 64,
             height: 64
           }}
-          to="/app/account"
+          to="/wiki/account"
         />
         <Typography
           color="textPrimary"
