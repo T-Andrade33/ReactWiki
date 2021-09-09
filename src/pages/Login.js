@@ -11,7 +11,6 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
-import FacebookIcon from 'src/icons/Facebook';
 import GoogleIcon from 'src/icons/Google';
 
 const Login = () => {
@@ -20,7 +19,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>SIG2000 WIKI | Login </title>
+        <title>Portal Afv 3.0 | Login</title>
       </Helmet>
       <Box
         sx={{
@@ -34,15 +33,15 @@ const Login = () => {
         <Container maxWidth="sm">
           <Formik
             initialValues={{
-              email: 'demo@devias.io',
-              password: 'Password123'
+              users: 'SIG2000',
+              password: '12345678'
             }}
             validationSchema={Yup.object().shape({
-              email: Yup.string().email('Must be a valid email').max(255).required('Email is required'),
-              password: Yup.string().max(255).required('Password is required')
+              users: Yup.string().max(25).required('Informe um usuário'),
+              password: Yup.string().max(16).required('Por favor informar a senha!')
             })}
             onSubmit={() => {
-              navigate('/wiki/dashboard', { replace: true });
+              navigate('/app/dashboard', { replace: true });
             }}
           >
             {({
@@ -56,56 +55,17 @@ const Login = () => {
             }) => (
               <form onSubmit={handleSubmit}>
                 <Box sx={{ mb: 3 }}>
-                  <Typography
-                    color="textPrimary"
-                    variant="h2"
-                  >
-                    Sign in
+                  <Typography color="textPrimary" variant="h2">
+                    AFV Manager
                   </Typography>
                   <Typography
                     color="textSecondary"
                     gutterBottom
                     variant="body2"
                   >
-                    Sign in on the internal platform
+                    Informe seus dados para efetuar o login
                   </Typography>
                 </Box>
-                <Grid
-                  container
-                  spacing={3}
-                >
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      color="primary"
-                      fullWidth
-                      startIcon={<FacebookIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Facebook
-                    </Button>
-                  </Grid>
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                  >
-                    <Button
-                      fullWidth
-                      startIcon={<GoogleIcon />}
-                      onClick={handleSubmit}
-                      size="large"
-                      variant="contained"
-                    >
-                      Login with Google
-                    </Button>
-                  </Grid>
-                </Grid>
                 <Box
                   sx={{
                     pb: 1,
@@ -117,27 +77,27 @@ const Login = () => {
                     color="textSecondary"
                     variant="body1"
                   >
-                    or login with email address
+                    Informe o Usuário e senha
                   </Typography>
                 </Box>
                 <TextField
-                  error={Boolean(touched.email && errors.email)}
+                  error={Boolean(touched.users && errors.users)}
                   fullWidth
-                  helperText={touched.email && errors.email}
-                  label="Email Address"
+                  helperText={touched.users && errors.users}
+                  label="Usuário"
                   margin="normal"
-                  name="email"
+                  name="users"
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  type="email"
-                  value={values.email}
+                  type="users"
+                  value={values.users}
                   variant="outlined"
                 />
                 <TextField
                   error={Boolean(touched.password && errors.password)}
                   fullWidth
                   helperText={touched.password && errors.password}
-                  label="Password"
+                  label="Senha"
                   margin="normal"
                   name="password"
                   onBlur={handleBlur}
@@ -146,7 +106,7 @@ const Login = () => {
                   value={values.password}
                   variant="outlined"
                 />
-                <Box sx={{ py: 2 }}>
+                {/* <Box sx={{ py: 2 }}>
                   <Button
                     color="primary"
                     disabled={isSubmitting}
@@ -155,21 +115,40 @@ const Login = () => {
                     type="submit"
                     variant="contained"
                   >
-                    Sign in now
+                    Logar
                   </Button>
-                </Box>
-                <Typography
-                  color="textSecondary"
-                  variant="body1"
-                >
-                  Don&apos;t have an account?
+                </Box> */}
+
+                <Grid container spacing={3}>
+                  <Grid item xs={12} md={6}>
+                    <Button
+                      fullWidth
+                      startIcon={<GoogleIcon />}
+                      onClick={handleSubmit}
+                      size="large"
+                      variant="contained"
+                    >
+                      Logar com Google
+                    </Button>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <Button
+                      color="primary"
+                      disabled={isSubmitting}
+                      fullWidth
+                      size="large"
+                      type="submit"
+                      variant="contained"
+                    >
+                      Logar com Usuário
+                    </Button>
+                  </Grid>
+                </Grid>
+                <Typography color="textSecondary" variant="body1">
+                  Esqueceu sua senha?
                   {' '}
-                  <Link
-                    component={RouterLink}
-                    to="/register"
-                    variant="h6"
-                  >
-                    Sign up
+                  <Link component={RouterLink} to="/#" variant="h6">
+                    Recuperar
                   </Link>
                 </Typography>
               </form>

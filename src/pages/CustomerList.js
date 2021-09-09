@@ -7,7 +7,7 @@ import customers from 'src/__mocks__/customers';
 const CustomerList = () => (
   <>
     <Helmet>
-      <title>SIG2000 WIKI | Login</title>
+      <title>Customers | Material Kit</title>
     </Helmet>
     <Box
       sx={{

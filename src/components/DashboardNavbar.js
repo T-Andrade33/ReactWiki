@@ -7,7 +7,6 @@ import {
   Box,
   Hidden,
   IconButton,
-  Typography,
   Toolbar
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -28,14 +27,6 @@ const DashboardNavbar = ({ onMobileNavOpen, ...rest }) => {
           <Logo />
         </RouterLink>
         <Box sx={{ flexGrow: 1 }} />
-        <Typography
-          align="center"
-          variant="body2"
-          h6="h1"
-          color="inherit"
-        >
-          Bem vindo ao Wiki - Sig2000
-        </Typography>
         <Hidden lgDown>
           <IconButton color="inherit">
             <Badge

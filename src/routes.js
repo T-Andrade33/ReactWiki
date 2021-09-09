@@ -3,8 +3,8 @@ import DashboardLayout from 'src/components/DashboardLayout';
 import MainLayout from 'src/components/MainLayout';
 import Account from 'src/pages/Account';
 import CustomerList from 'src/pages/CustomerList';
-import UsersList from 'src/pages/UsersList';
 import Dashboard from 'src/pages/Dashboard';
+import Company from 'src/pages/Company';
 import Login from 'src/pages/Login';
 import NotFound from 'src/pages/NotFound';
 import ProductList from 'src/pages/ProductList';
@@ -13,12 +13,13 @@ import Settings from 'src/pages/Settings';
 
 const routes = [
   {
-    path: 'wiki',
+    path: 'app',
     element: <DashboardLayout />,
     children: [
       { path: 'account', element: <Account /> },
       { path: 'customers', element: <CustomerList /> },
-      { path: 'users', element: <UsersList /> },
+      { path: 'company', element: <Company /> },
+      { path: 'login', element: <Login /> },
       { path: 'dashboard', element: <Dashboard /> },
       { path: 'products', element: <ProductList /> },
       { path: 'settings', element: <Settings /> },
@@ -32,7 +33,7 @@ const routes = [
       { path: 'login', element: <Login /> },
       { path: 'register', element: <Register /> },
       { path: '404', element: <NotFound /> },
-      { path: '/', element: <Navigate to="/wiki/dashboard" /> },
+      { path: '/', element: <Navigate to="/app/dashboard" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   }

@@ -6,7 +6,7 @@ import 'src/mixins/chartjs';
 import theme from 'src/theme';
 import routes from 'src/routes';
 
-const Wiki = () => {
+const PortalAfv = () => {
   const routing = useRoutes(routes);
 
   return (
@@ -17,4 +17,4 @@ const Wiki = () => {
   );
 };
 
-export default Wiki;
+export default PortalAfv;

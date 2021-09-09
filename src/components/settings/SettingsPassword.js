@@ -64,7 +64,7 @@ const SettingsPassword = (props) => {
             color="primary"
             variant="contained"
           >
-            Update
+            Atualizar
           </Button>
         </Box>
       </Card>

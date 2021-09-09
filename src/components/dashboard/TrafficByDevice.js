@@ -21,9 +21,9 @@ const TrafficByDevice = (props) => {
       {
         data: [63, 15, 22],
         backgroundColor: [
-          colors.cyan[800],
-          colors.grey[600],
-          colors.red[400]
+          colors.indigo[500],
+          colors.red[600],
+          colors.orange[600]
         ],
         borderWidth: 8,
         borderColor: colors.common.white,
@@ -57,7 +57,7 @@ const TrafficByDevice = (props) => {
 
   const devices = [
     {
-      title: 'Computador',
+      title: 'Desktop',
       value: 63,
       icon: LaptopMacIcon,
       color: colors.indigo[500]
@@ -69,7 +69,7 @@ const TrafficByDevice = (props) => {
       color: colors.red[600]
     },
     {
-      title: 'Celular',
+      title: 'Mobile',
       value: 23,
       icon: PhoneIcon,
       color: colors.orange[600]
@@ -78,7 +78,7 @@ const TrafficByDevice = (props) => {
 
   return (
     <Card {...props}>
-      <CardHeader title="Utilização da Plataforma" />
+      <CardHeader title="Traffic by Device" />
       <Divider />
       <CardContent>
         <Box

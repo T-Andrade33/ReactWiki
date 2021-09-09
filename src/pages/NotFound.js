@@ -8,7 +8,7 @@ import {
 const NotFound = () => (
   <>
     <Helmet>
-      <title>SIG2000 WIKI | Page 404</title>
+      <title>404 | SIG2000</title>
     </Helmet>
     <Box
       sx={{
@@ -25,7 +25,7 @@ const NotFound = () => (
           color="textPrimary"
           variant="h1"
         >
-          404: The page you are looking for isn’t here
+          404: A página não foi encontrada.
         </Typography>
         <Typography
           align="center"

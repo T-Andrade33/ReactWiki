@@ -45,12 +45,13 @@ const ProductList = () => (
           sx={{
             display: 'flex',
             justifyContent: 'center',
-            pt: 3
+            pt: 5
           }}
         >
           <Pagination
+            type="first"
             color="primary"
-            count={3}
+            count={5}
             size="small"
           />
         </Box>

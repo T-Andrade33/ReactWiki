@@ -10,7 +10,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MoneyIcon from '@material-ui/icons/Money';
 import { red } from '@material-ui/core/colors';
 
-const Budget = (props) => (
+const Orders = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
@@ -27,13 +27,13 @@ const Budget = (props) => (
             gutterBottom
             variant="h6"
           >
-            BUDGET
+            TOTAL DE PEDIDOS
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            $24,000
+            65
           </Typography>
         </Grid>
         <Grid item>
@@ -69,11 +69,11 @@ const Budget = (props) => (
           color="textSecondary"
           variant="caption"
         >
-          Since last month
+          Mês Atual
         </Typography>
       </Box>
     </CardContent>
   </Card>
 );
 
-export default Budget;
+export default Orders;

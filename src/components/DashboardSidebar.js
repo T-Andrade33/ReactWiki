@@ -33,7 +33,6 @@ import NavItem from './NavItem';
 
 const company = {
   avatar: '/static/images/company/demo01.png',
-  // avatar: 'https:afv.sig2000.com.br/arquivos/emp-11/filial/1/',
   companyTitle: 'SIG2000 - Demonstração',
   name: 'Tiago Andrade'
 };
@@ -154,7 +153,7 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
             width: 64,
             height: 64
           }}
-          to="/wiki/account"
+          to="/app/account"
         />
         <Typography
           color="textPrimary"
@@ -192,9 +191,16 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
       >
         <Typography
           align="center"
+          gutterBottom
+          variant="h4"
+        >
+          Portal AFV/Pedido Web
+        </Typography>
+        <Typography
+          align="center"
           variant="body2"
         >
-          Portal Administrativo dos Pedidos Web e Afv.
+          Em caso de dúvidas, entrar em contato com o setor de desenvolvimento.
         </Typography>
         <Box
           sx={{
@@ -204,13 +210,13 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
           }}
         >
           <Button
+            variant="outlined"
             color="primary"
             component="a"
             href="https://afv.sig2000.com.br/index.php/usuario_auth/login"
-            variant="outlined"
             target="_blank"
           >
-            Acessar Portal
+            Portal Web
           </Button>
         </Box>
       </Box>

@@ -15,8 +15,8 @@ const SettingsNotifications = (props) => (
   <form {...props}>
     <Card>
       <CardHeader
-        subheader="Manage the notifications"
-        title="Notifications"
+        subheader="Apenas os campos checados serão sincronizados"
+        title="Sincronização do AFV"
       />
       <Divider />
       <CardContent>

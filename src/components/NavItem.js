@@ -1,3 +1,5 @@
+/** Menu lateral do Dashboard */
+
 import {
   NavLink as RouterLink,
   matchPath,

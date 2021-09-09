@@ -49,7 +49,7 @@ const Register = () => {
               })
             }
             onSubmit={() => {
-              navigate('/wiki/dashboard', { replace: true });
+              navigate('/app/dashboard', { replace: true });
             }}
           >
             {({

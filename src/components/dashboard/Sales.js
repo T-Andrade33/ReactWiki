@@ -20,12 +20,12 @@ const Sales = (props) => {
       {
         backgroundColor: colors.indigo[500],
         data: [18, 5, 19, 27, 29, 19, 20],
-        label: 'This year'
+        label: 'Ano atual'
       },
       {
         backgroundColor: colors.grey[200],
         data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year'
+        label: 'último ano'
       }
     ],
     labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug']
@@ -95,10 +95,10 @@ const Sales = (props) => {
             size="small"
             variant="text"
           >
-            Last 7 days
+            Últimos 7 dias
           </Button>
         )}
-        title="Latest Sales"
+        title="Últimas Vendas"
       />
       <Divider />
       <CardContent>
@@ -128,7 +128,7 @@ const Sales = (props) => {
           size="small"
           variant="text"
         >
-          Overview
+          Visão Geral
         </Button>
       </Box>
     </Card>
