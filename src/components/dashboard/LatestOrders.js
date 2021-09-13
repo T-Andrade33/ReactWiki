@@ -91,10 +91,10 @@ const LatestOrders = (props) => (
           <TableHead>
             <TableRow>
               <TableCell>
-                Order Ref
+                Ticket
               </TableCell>
               <TableCell>
-                Customer
+                Cliente
               </TableCell>
               <TableCell sortDirection="desc">
                 <Tooltip
@@ -105,7 +105,7 @@ const LatestOrders = (props) => (
                     active
                     direction="desc"
                   >
-                    Date
+                    Alteração
                   </TableSortLabel>
                 </Tooltip>
               </TableCell>
@@ -155,7 +155,7 @@ const LatestOrders = (props) => (
         size="small"
         variant="text"
       >
-        View all
+        Ver mais
       </Button>
     </Box>
   </Card>

@@ -81,7 +81,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  Razao Social
                 </TableCell>
                 <TableCell>
                   Email
@@ -90,7 +90,7 @@ const CustomerListResults = ({ customers, ...rest }) => {
                   Location
                 </TableCell>
                 <TableCell>
-                  Phone
+                  Contato
                 </TableCell>
                 <TableCell>
                   Registration date

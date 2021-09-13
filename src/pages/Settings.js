@@ -6,7 +6,7 @@ import SettingsNotifications from 'src/components/settings/SettingsNotifications
 const SettingsView = () => (
   <>
     <Helmet>
-      <title>Portal Afv 3.0 | Configurações</title>
+      <title>SIG2000 WIKI 2.0 | Configurações</title>
     </Helmet>
     <Box
       sx={{

@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import { green } from '@material-ui/core/colors';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import PeopleIcon from '@material-ui/icons/PeopleOutlined';
+// import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const TotalCustomers = (props) => (
   <Card {...props}>
@@ -24,13 +24,13 @@ const TotalCustomers = (props) => (
             gutterBottom
             variant="h6"
           >
-            TOTAL 00000 FISCAL
+            TOTAL DE CLIENTES
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            65
+            180
           </Typography>
         </Grid>
         <Grid item>
@@ -41,7 +41,7 @@ const TotalCustomers = (props) => (
               width: 56
             }}
           >
-            <PeopleIcon />
+            {/* <PeopleIcon /> */}
           </Avatar>
         </Grid>
       </Grid>
@@ -66,7 +66,7 @@ const TotalCustomers = (props) => (
           color="textSecondary"
           variant="caption"
         >
-          Mês Atual
+          Since last month
         </Typography>
       </Box>
     </CardContent>

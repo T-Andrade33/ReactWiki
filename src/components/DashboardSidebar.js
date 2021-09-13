@@ -44,12 +44,12 @@ const items = [
     title: 'Dashboard'
   },
   {
-    href: '/wiki/#',
+    href: '/wiki/buscacep',
     icon: AgendaIcon,
     title: 'Agenda'
   },
   {
-    href: '/wiki/#',
+    href: '/wiki/products',
     icon: TaskIcon,
     title: 'Atendimentos'
   },
@@ -71,7 +71,7 @@ const items = [
   {
     href: '/wiki/#',
     icon: ClockIcon,
-    title: 'Controle de Horas'
+    title: 'Controle de Ponto'
   },
   {
     href: '/wiki/#',
@@ -94,7 +94,7 @@ const items = [
     title: 'Patrimônio'
   },
   {
-    href: '/wiki/users',
+    href: '/wiki/#',
     icon: UsersIcon,
     title: 'Perfil de Usuário'
   },
@@ -107,6 +107,11 @@ const items = [
     href: '/wiki/#',
     icon: SolutionSignIcon,
     title: 'Soluções'
+  },
+  {
+    href: '/wiki/#',
+    icon: SolutionSignIcon,
+    title: 'F.A.Q'
   },
   {
     href: '/wiki/#',

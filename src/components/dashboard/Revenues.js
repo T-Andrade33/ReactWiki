@@ -1,4 +1,3 @@
-/* Receita / Faturamento */
 import {
   Avatar,
   Card,
@@ -9,7 +8,7 @@ import {
 import { indigo } from '@material-ui/core/colors';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
-const Revenues = (props) => (
+const TotalProfit = (props) => (
   <Card {...props}>
     <CardContent>
       <Grid
@@ -23,13 +22,13 @@ const Revenues = (props) => (
             gutterBottom
             variant="h6"
           >
-            FATURAMENTO MENSAL
+            TOTAL PROFIT
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            $1.525.568,65
+            $23,200
           </Typography>
         </Grid>
         <Grid item>
@@ -48,4 +47,4 @@ const Revenues = (props) => (
   </Card>
 );
 
-export default Revenues;
+export default TotalProfit;

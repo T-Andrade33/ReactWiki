@@ -106,19 +106,6 @@ const Login = () => {
                   value={values.password}
                   variant="outlined"
                 />
-                {/* <Box sx={{ py: 2 }}>
-                  <Button
-                    color="primary"
-                    disabled={isSubmitting}
-                    fullWidth
-                    size="large"
-                    type="submit"
-                    variant="contained"
-                  >
-                    Logar
-                  </Button>
-                </Box> */}
-
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <Button
