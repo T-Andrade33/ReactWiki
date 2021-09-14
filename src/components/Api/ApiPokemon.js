@@ -1,11 +1,11 @@
-// import React, { useEffect, useState, Component } from "react";
-// import api from "../Service/Pokemon";
+// import React, { useEffect, useState } from "react";
+// import apiPokemon from "../Service/pokemon";
 
 // export default function AppPokemon() {
 //   const [pokemon, setPokemon] = useState();
 
 //   useEffect(() => {
-//     api
+//     apiPokemon
 //       .get("/pokemon")
 //       .then((response) => setUser(response.data))
 //       .catch((err) => {
@@ -16,7 +16,7 @@
 //   return (
 //     <div>
 //       <p>Pokemon: {pokemon.data}</p>
-//       <p>Biografia: {pokemon?.bio}</p>
+//       <p>Biografia: {pokemon.bio}</p>
 //     </div>
 //   );
 // }

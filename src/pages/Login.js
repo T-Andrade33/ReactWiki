@@ -56,7 +56,7 @@ const Login = () => {
               <form onSubmit={handleSubmit}>
                 <Box sx={{ mb: 3 }}>
                   <Typography color="textPrimary" variant="h2">
-                    AFV Manager
+                    Acesso WIKI 3.0
                   </Typography>
                   <Typography
                     color="textSecondary"

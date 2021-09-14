@@ -4,19 +4,19 @@ import {
   Container,
   Grid
 } from '@material-ui/core';
-import Order from 'src/components/dashboard/Orders';
+import TicketsOpen from 'src/components/dashboard/TicketsOpen';
 import LatestOrders from 'src/components/dashboard//LatestOrders';
-import LatestProducts from 'src/components/dashboard//LatestProducts';
+import AnalystsRanking from 'src/components/dashboard//AnalystsRanking';
 import Sales from 'src/components/dashboard//Sales';
-import TasksProgress from 'src/components/dashboard//TasksProgress';
+import TicketsClosed from 'src/components/dashboard/TicketsClosed';
+import TotalTickets from 'src/components/dashboard/TotalTickets';
 import TotalCustomers from 'src/components/dashboard/TotalCustomers';
-import Revenues from 'src/components/dashboard/Revenues';
 import TrafficByDevice from 'src/components/dashboard//TrafficByDevice';
 
 const Dashboard = () => (
   <>
     <Helmet>
-      <title>SIG2000 WIKI | Homepage </title>
+      <title>SIG2000 WIKI | Dashboard </title>
     </Helmet>
     <Box
       sx={{
@@ -37,7 +37,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <Order />
+            <TicketsOpen />
           </Grid>
           <Grid
             item
@@ -46,7 +46,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <TotalCustomers />
+            <TotalTickets />
           </Grid>
           <Grid
             item
@@ -55,7 +55,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <TasksProgress />
+            <TicketsClosed />
           </Grid>
           <Grid
             item
@@ -64,7 +64,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <Revenues sx={{ height: '100%' }} />
+            <TotalCustomers sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
@@ -91,7 +91,7 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            <LatestProducts sx={{ height: '100%' }} />
+            <AnalystsRanking sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item

@@ -6,15 +6,11 @@ import {
   Grid,
   Typography
 } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import MoneyIcon from '@material-ui/icons/Money';
-import { red } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
+import ArrowUpward from '@material-ui/icons/ArrowUpward';
 
-const Budget = (props) => (
-  <Card
-    sx={{ height: '100%' }}
-    {...props}
-  >
+const TotalTickets = (props) => (
+  <Card {...props}>
     <CardContent>
       <Grid
         container
@@ -27,53 +23,53 @@ const Budget = (props) => (
             gutterBottom
             variant="h6"
           >
-            BUDGET
+            TICKET PENDENTE
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            $24,000
+            221
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: red[600],
+              backgroundColor: green[600],
               height: 56,
               width: 56
             }}
           >
-            <MoneyIcon />
+            {/* <PeopleIcon /> */}
           </Avatar>
         </Grid>
       </Grid>
       <Box
         sx={{
-          pt: 2,
+          alignItems: 'center',
           display: 'flex',
-          alignItems: 'center'
+          pt: 2
         }}
       >
-        <ArrowDownwardIcon sx={{ color: red[900] }} />
+        <ArrowUpward sx={{ color: green[900] }} />
         <Typography
+          variant="body2"
           sx={{
-            color: red[900],
+            color: green[900],
             mr: 1
           }}
-          variant="body2"
         >
-          12%
+          25%
         </Typography>
         <Typography
           color="textSecondary"
           variant="caption"
         >
-          Since last month
+          Desde a última semana
         </Typography>
       </Box>
     </CardContent>
   </Card>
 );
 
-export default Budget;
+export default TotalTickets;

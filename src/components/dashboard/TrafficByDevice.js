@@ -63,8 +63,8 @@ const TrafficByDevice = (props) => {
       color: colors.indigo[500]
     },
     {
-      title: 'Tablet',
-      value: 15,
+      title: 'Web',
+      value: 10,
       icon: TabletIcon,
       color: colors.red[600]
     },
@@ -78,7 +78,7 @@ const TrafficByDevice = (props) => {
 
   return (
     <Card {...props}>
-      <CardHeader title="Traffic by Device" />
+      <CardHeader title="Atendimentos Por Plataforma" />
       <Divider />
       <CardContent>
         <Box

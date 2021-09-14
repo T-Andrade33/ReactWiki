@@ -116,6 +116,11 @@ const items = [
   {
     href: '/wiki/#',
     icon: TicketIcon,
+    title: 'Ticket MySuit'
+  },
+  {
+    href: '/wiki/#',
+    icon: TicketIcon,
     title: 'Ticket Interno'
   },
   {

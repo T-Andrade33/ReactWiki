@@ -1,14 +1,12 @@
 import {
   Avatar,
-  Box,
   Card,
   CardContent,
   Grid,
   Typography
 } from '@material-ui/core';
-import { green } from '@material-ui/core/colors';
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-// import PeopleIcon from '@material-ui/icons/PeopleOutlined';
+import { indigo } from '@material-ui/core/colors';
+import AttachMoneyIcon from '@material-ui/icons/PeopleAltOutlined';
 
 const TotalCustomers = (props) => (
   <Card {...props}>
@@ -30,45 +28,21 @@ const TotalCustomers = (props) => (
             color="textPrimary"
             variant="h3"
           >
-            180
+            185
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: green[600],
+              backgroundColor: indigo[600],
               height: 56,
               width: 56
             }}
           >
-            {/* <PeopleIcon /> */}
+            <AttachMoneyIcon />
           </Avatar>
         </Grid>
       </Grid>
-      <Box
-        sx={{
-          alignItems: 'center',
-          display: 'flex',
-          pt: 2
-        }}
-      >
-        <ArrowUpwardIcon sx={{ color: green[900] }} />
-        <Typography
-          variant="body2"
-          sx={{
-            color: green[900],
-            mr: 1
-          }}
-        >
-          16%
-        </Typography>
-        <Typography
-          color="textSecondary"
-          variant="caption"
-        >
-          Since last month
-        </Typography>
-      </Box>
     </CardContent>
   </Card>
 );

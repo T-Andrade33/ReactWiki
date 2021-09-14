@@ -10,7 +10,7 @@ import {
 import { orange } from '@material-ui/core/colors';
 import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
-const TasksProgress = (props) => (
+const TicketsClosed = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
@@ -27,13 +27,13 @@ const TasksProgress = (props) => (
             gutterBottom
             variant="h6"
           >
-            TASKS PROGRESS
+            TICKET CONCLUIDO
           </Typography>
           <Typography
             color="textPrimary"
             variant="h3"
           >
-            75.5%
+            90.5%
           </Typography>
         </Grid>
         <Grid item>
@@ -58,4 +58,4 @@ const TasksProgress = (props) => (
   </Card>
 );
 
-export default TasksProgress;
+export default TicketsClosed;
