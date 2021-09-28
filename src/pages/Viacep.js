@@ -5,9 +5,7 @@ import { Formik } from 'formik';
 import {
   Box,
   Button,
-  Checkbox,
   Container,
-  FormHelperText,
   Link,
   TextField,
   Typography
@@ -19,25 +17,25 @@ const Register = () => {
   return (
     <>
       <Helmet>
-        <title>Register | Material Kit</title>
+        <title>Api Via Cep</title>
       </Helmet>
       <Box
         sx={{
           backgroundColor: 'background.default',
           display: 'flex',
           flexDirection: 'column',
-          height: '100%',
+          height: '110%',
           justifyContent: 'center'
         }}
       >
         <Container maxWidth="sm">
           <Formik
             initialValues={{
-              email: '',
-              firstName: '',
-              lastName: '',
-              password: '',
-              policy: false
+              cep: '',
+              logradouro: '',
+              bairro: '',
+              localidade: '',
+              uf: ''
             }}
             // validationSchema={
             //   Yup.object().shape({
@@ -66,84 +64,71 @@ const Register = () => {
                     color="textPrimary"
                     variant="h2"
                   >
-                    Create new account
+                    Testando Api ViaCep
                   </Typography>
                   <Typography
                     color="textSecondary"
                     gutterBottom
                     variant="body2"
                   >
-                    Use your email to create new account
+                    Buscanddo dados de logradouro via cep
                   </Typography>
                 </Box>
                 <TextField
-                  error={Boolean(touched.firstName && errors.firstName)}
+                  error={Boolean(touched.cep && errors.cep)}
                   fullWidth
-                  helperText={touched.firstName && errors.firstName}
-                  label="First name"
+                  helperText={touched.cep && errors.cep}
+                  label="Informe o Cep"
                   margin="normal"
-                  name="firstName"
+                  name="cep"
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  value={values.firstName}
+                  value={values.cep}
                   variant="outlined"
                 />
                 <TextField
-                  error={Boolean(touched.lastName && errors.lastName)}
+                  error={Boolean(touched.logradouro && errors.logradouro)}
                   fullWidth
-                  helperText={touched.lastName && errors.lastName}
-                  label="Last name"
+                  helperText={touched.logradouro && errors.logradouro}
+                  label="logradouro"
                   margin="normal"
-                  name="lastName"
-                  onBlur={handleBlur}
-                  onChange={handleChange}
-                  value={values.lastName}
+                  name="logradouro"
+                  value={values.logradouro}
                   variant="outlined"
                 />
                 <TextField
-                  error={Boolean(touched.email && errors.email)}
+                  error={Boolean(touched.bairro && errors.bairro)}
                   fullWidth
-                  helperText={touched.email && errors.email}
-                  label="Email Address"
+                  helperText={touched.bairro && errors.bairro}
+                  label="bairro"
                   margin="normal"
-                  name="email"
-                  onBlur={handleBlur}
-                  onChange={handleChange}
+                  name="bairro"
+                  type="bairro"
+                  value={values.bairro}
+                  variant="outlined"
+                />
+                <TextField
+                  error={Boolean(touched.localidade && errors.localidade)}
+                  fullWidth
+                  helperText={touched.localidade && errors.localidade}
+                  label="localidade"
+                  margin="normal"
+                  name="localidade"
                   type="email"
-                  value={values.email}
+                  value={values.localidade}
                   variant="outlined"
                 />
                 <TextField
-                  error={Boolean(touched.password && errors.password)}
+                  error={Boolean(touched.uf && errors.uf)}
                   fullWidth
-                  helperText={touched.password && errors.password}
-                  label="Password"
+                  helperText={touched.uf && errors.uf}
+                  label="Estado"
                   margin="normal"
-                  name="password"
-                  onBlur={handleBlur}
-                  onChange={handleChange}
-                  type="password"
-                  value={values.password}
+                  name="uf"
+                  type="email"
+                  value={values.uf}
                   variant="outlined"
                 />
-                <Box
-                  sx={{
-                    alignItems: 'center',
-                    display: 'flex',
-                    ml: -1
-                  }}
-                >
-                  <Checkbox
-                    checked={values.policy}
-                    name="policy"
-                    onChange={handleChange}
-                  />
-                </Box>
-                {Boolean(touched.policy && errors.policy) && (
-                  <FormHelperText error>
-                    {errors.policy}
-                  </FormHelperText>
-                )}
                 <Box sx={{ py: 2 }}>
                   <Button
                     color="primary"
@@ -153,21 +138,21 @@ const Register = () => {
                     type="submit"
                     variant="contained"
                   >
-                    Sign up now
+                    Buscar Cep
                   </Button>
                 </Box>
                 <Typography
                   color="textSecondary"
                   variant="body1"
                 >
-                  Have an account?
+                  .
                   {' '}
                   <Link
                     component={RouterLink}
-                    to="/login"
+                    to="/#"
                     variant="h6"
                   >
-                    Sign in
+                    .
                   </Link>
                 </Typography>
               </form>

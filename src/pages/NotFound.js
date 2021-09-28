@@ -2,13 +2,14 @@ import { Helmet } from 'react-helmet';
 import {
   Box,
   Container,
+  Button,
   Typography
 } from '@material-ui/core';
 
 const NotFound = () => (
   <>
     <Helmet>
-      <title>404 | SIG2000</title>
+      <title>SIG2000 WIKI 2.0 | 404 </title>
     </Helmet>
     <Box
       sx={{
@@ -32,8 +33,13 @@ const NotFound = () => (
           color="textPrimary"
           variant="subtitle2"
         >
-          You either tried some shady route or you came here by mistake.
-          Whichever it is, try using the navigation
+          <Button
+            variant="contained"
+            color="primary"
+            component="a"
+          >
+            Voltar
+          </Button>
         </Typography>
         <Box sx={{ textAlign: 'center' }}>
           <img
