@@ -9,6 +9,7 @@ import Login from 'src/pages/Login';
 import NotFound from 'src/pages/NotFound';
 import ProductList from 'src/pages/ProductList';
 import Register from 'src/pages/Register';
+import Viacep from 'src/pages/Viacep';
 import Settings from 'src/pages/Settings';
 
 const routes = [
@@ -23,6 +24,7 @@ const routes = [
       { path: 'dashboard', element: <Dashboard /> },
       { path: 'products', element: <ProductList /> },
       { path: 'settings', element: <Settings /> },
+      { path: 'viacep', element: <Viacep /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
   },

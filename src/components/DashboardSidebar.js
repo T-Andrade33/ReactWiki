@@ -44,6 +44,11 @@ const items = [
     title: 'Dashboard'
   },
   {
+    href: '/wiki/#',
+    icon: NotificationsIcon,
+    title: 'Avisos / Notificações'
+  },
+  {
     href: '/wiki/buscacep',
     icon: AgendaIcon,
     title: 'Agenda'
@@ -55,8 +60,8 @@ const items = [
   },
   {
     href: '/wiki/#',
-    icon: NotificationsIcon,
-    title: 'Avisos / Notificações'
+    icon: UsersIcon,
+    title: 'Colaboradores'
   },
   {
     href: '/wiki/customers',
@@ -95,11 +100,6 @@ const items = [
   },
   {
     href: '/wiki/#',
-    icon: UsersIcon,
-    title: 'Perfil de Usuário'
-  },
-  {
-    href: '/wiki/#',
     icon: ArchiveIcon,
     title: 'Relatórios'
   },
@@ -122,6 +122,15 @@ const items = [
     href: '/wiki/#',
     icon: TicketIcon,
     title: 'Ticket Interno'
+  }, {
+    href: '/wiki/#',
+    icon: TicketIcon,
+    title: 'Pesquisa de Satisfação'
+  },
+  {
+    href: '/wiki/#',
+    icon: TicketIcon,
+    title: 'Versão dos Softwares'
   },
   {
     href: '/wiki/settings',
