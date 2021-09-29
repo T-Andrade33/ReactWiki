@@ -18,9 +18,21 @@ const Login = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Portal Afv 3.0 | Login</title>
-      </Helmet>
+      <Box sx={{ textAlign: 'center', backgroundColor: 'background.default', maxHeight: '30%' }}>
+        <Helmet>
+          <title>Portal Afv 3.0 | Login</title>
+        </Helmet>
+        <img
+          alt="Under development"
+          src="/static/images/company/demo01.png"
+          style={{
+            marginTop: 25,
+            display: 'inline-block',
+            maxWidth: '50%',
+            width: 200
+          }}
+        />
+      </Box>
       <Box
         sx={{
           backgroundColor: 'background.default',
