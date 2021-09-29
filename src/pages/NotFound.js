@@ -37,6 +37,7 @@ const NotFound = () => (
             variant="contained"
             color="primary"
             component="a"
+            size="large"
           >
             Voltar
           </Button>
